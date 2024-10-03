@@ -34,11 +34,11 @@ const userSchema = Schema({
         type: String, 
         required:true
     },
-    rol: {
-        type: mongoose_1.Schema.Types.ObjectId,
-        ref: 'UserRol',
-        required: true,
-    }
+    // rol: {
+    //     type: mongoose_1.Schema.Types.ObjectId,
+    //     ref: 'UserRol',
+    //     required: true,
+    // }
 });
 
 module.exports = model('Users', userSchema)
