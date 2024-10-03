@@ -11,14 +11,7 @@ dbConnect()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-
-const corsOptions = {
-    origin: 'http://bicitour-x.s3-website.us-east-2.amazonaws.com',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-    optionsSuccessStatus: 204
-};
-app.use(cors(corsOptions));
+app.use(cors());
 
 
 app.use('/', api)
